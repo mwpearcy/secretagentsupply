@@ -1,0 +1,290 @@
+html {
+  font-size: 18px;
+}
+
+/* HEADER */
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+#title {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  color: white;
+}
+
+#header960 {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 960px;
+  align-items: center;
+}
+
+/* BANNER */
+
+#banner {
+  display: flex;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner960 {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+  align-items: center;
+  padding-top: 9rem;
+}
+
+#featured {
+  display: flex;
+  width: 25rem;
+  background-color: black;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#featured h2 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 0.25rem;
+}
+
+#featured h3 {
+  color: white;
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* NAV BAR */
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: firebrick;
+}
+
+#nav960 {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+.nav {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: white;
+  font-family: Helvetica;
+}
+
+#nav1024 {
+  display: none;
+}
+
+/* SHOP SECTION / BODY */
+
+#shop {
+  display: flex;
+  justify-content: center;
+}
+
+#shop960 {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+#products {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+#prod1,
+#prod2,
+#prod3 {
+  width: 30%;
+}
+
+#prod1 img,
+#prod2 img {
+  height: 9rem;
+  padding: 2rem;
+}
+
+#glasses {
+  height: 5rem;
+}
+
+.productimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  height: 13rem;
+}
+
+.producttitle {
+  display: flex;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producttitle p {
+  color: white;
+  font-family: Helvetica;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#info {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.find_us {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.findtitle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: white;
+  font-family: Helvetica;
+  background-color: black;
+}
+
+.findsub {
+  font-family: Helvetica;
+}
+
+footer {
+  height: 9rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#footer960 {
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+#copyright {
+  color: white;
+  font-family: Helvetica;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width : 1024px) {
+
+  span.nav {
+    display: none;
+  }
+
+  #nav1024 {
+    display: flex;
+    justify-content: center;
+    background-color: firebrick;
+    max-width: 1024px;
+  }
+
+  #prod1,
+  #prod2 {
+    width: 47%;
+  }
+
+  #prod3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 470px) {
+
+  #featured h2 {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  #featured h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #featured {
+    width: 100%;
+  }
+
+  #banner960 {
+    margin-top: -2rem;
+  }
+
+  #banner {
+    height: 15rem;
+  }
+
+  #prod2 {
+    display: none;
+  }
+
+  #prod1 {
+    width: 90%;
+  }
+
+  #products {
+    display: flex;
+    justify-content: center;
+  }
+
+  #info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .find_us {
+    width: 90%;
+  }
+
+  .findsub {
+    margin-bottom: 0.5rem;
+  }
+
+  #footer960 {
+    justify-content: center;
+  }
+}
